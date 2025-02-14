@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNEAKER-HEADS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">SNEAKER SHOP 👟</div>
+    <nav>
+      <ul>
+        <li><a href="#featured" class="top-heading">Featured</a></li>
+        <li><a href="#recommended" class="top-heading">Recommended</a></li>
+        <li><a href="#latest" class="top-heading">Latest</a></li>
+        <li><a href="#contact" class="top-heading">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="sneaker-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1 class="glitch-header">SNEAKER-HEADS</h1>
+      <p>Explore the world's finest sneakers.</p>
+      <a href="#featured" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="running">Running</option>
+      <option value="lifestyle">Lifestyle</option>
+      <option value="basketball">Basketball</option>
+    </select>
+  </div>
+
+  <!-- Featured Sneakers Section -->
+  <section id="featured" class="featured-sneakers">
+    <h2 class="glitch-header">FEATURED SNEAKERS</h2>
+    <div class="sneaker-grid">
+      <div class="sneaker-card">
+        <img src="pictures/airmax2.png" alt="Nike Air Max">
+        <div class="sneaker-info">
+          <h3>Nike Air Max</h3>
+          <p>$150</p>
+          <a href="nike-air-max.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/Air-jordan.png" alt="Air-jordan">
+        <div class="sneaker-info">
+          <h3>Air-jordan</h3>
+          <p>$180</p>
+          <a href="Air-jordan.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/jordan-1-retro.png" alt="Jordan 1 Retro">
+        <div class="sneaker-info">
+          <h3>Jordan 1 Retro</h3>
+          <p>$200</p>
+          <a href="jordan-1-retro.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/nike-dunk.png" alt="Nike Dunk">
+        <div class="sneaker-info">
+          <h3>Nike Dunk</h3>
+          <p>$110</p>
+          <a href="nike-dunk.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/adidas-superstar.png" alt="Adidas Superstar">
+        <div class="sneaker-info">
+          <h3>Adidas Superstar</h3>
+          <p>$130</p>
+          <a href="adidas-superstar.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/converse-chuck.png" alt="Converse Chuck Taylor">
+        <div class="sneaker-info">
+          <h3>Converse Chuck Taylor</h3>
+          <p>$80</p>
+          <a href="converse-chuck.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/vans-old-skool.png" alt="Vans Old Skool">
+        <div class="sneaker-info">
+          <h3>Vans Old Skool</h3>
+          <p>$70</p>
+          <a href="vans-old-skool.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/asics-gel.png" alt="Asics Gel-Lyte">
+        <div class="sneaker-info">
+          <h3>Asics Gel-Lyte</h3>
+          <p>$140</p>
+          <a href="asics-gel.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/under-armour.png" alt="Under Armour HOVR">
+        <div class="sneaker-info">
+          <h3>Under Armour HOVR</h3>
+          <p>$160</p>
+          <a href="under-armour.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Sneakers Section -->
+  <section id="recommended" class="recommended-sneakers">
+    <h2 class="glitch-header">WE RECOMMEND</h2>
+    <div class="sneaker-grid">
+      <div class="sneaker-card">
+        <img src="pictures/puma-rsx.png" alt="Puma RS-X">
+        <div class="sneaker-info">
+          <h3>Puma RS-X</h3>
+          <p>$120</p>
+          <a href="puma-rsx.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/new-balance-574.png" alt="New Balance 574">
+        <div class="sneaker-info">
+          <h3>New Balance 574</h3>
+          <p>$100</p>
+          <a href="new-balance-574.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/reebok-classic.png" alt="Reebok Classic">
+        <div class="sneaker-info">
+          <h3>Reebok Classic</h3>
+          <p>$90</p>
+          <a href="reebok-classic.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/nike-react.png" alt="Nike React">
+        <div class="sneaker-info">
+          <h3>Nike React</h3>
+          <p>$170</p>
+          <a href="nike-react.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/adidas-nmd.png" alt="Adidas NMD">
+        <div class="sneaker-info">
+          <h3>Adidas NMD</h3>
+          <p>$190</p>
+          <a href="adidas-nmd.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/puma-thunder.png" alt="Puma Thunder">
+        <div class="sneaker-info">
+          <h3>Puma Thunder</h3>
+          <p>$150</p>
+          <a href="puma-thunder.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/nike-blazer.png" alt="Nike Blazer">
+        <div class="sneaker-info">
+          <h3>Nike Blazer</h3>
+          <p>$110</p>
+          <a href="nike-blazer.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/adidas-ultraboost.png" alt="Adidas Ultraboost">
+        <div class="sneaker-info">
+          <h3>Adidas Ultraboost</h3>
+          <p>$180</p>
+          <a href="adidas-ultraboost.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/converse-one-star.png" alt="Converse One Star">
+        <div class="sneaker-info">
+          <h3>Converse One Star</h3>
+          <p>$90</p>
+          <a href="converse-one-star.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest in Stock Section -->
+  <section id="latest" class="latest-sneakers">
+    <h2 class="glitch-header">LATEST IN STOCK</h2>
+    <div class="sneaker-grid">
+      <div class="sneaker-card">
+        <img src="pictures/airmax2.png" alt="Nike Air Max">
+        <div class="sneaker-info">
+          <h3>Nike Air Max</h3>
+          <p>$150</p>
+          <a href="nike-air-max.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/Air-jordan.png" alt="Air-jordan">
+        <div class="sneaker-info">
+          <h3>Air-jordan</h3>
+          <p>$180</p>
+          <a href="Air-jordan.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/jordan-1-retro.png" alt="Jordan 1 Retro">
+        <div class="sneaker-info">
+          <h3>Jordan 1 Retro</h3>
+          <p>$200</p>
+          <a href="jordan-1-retro.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/nike-dunk.png" alt="Nike Dunk">
+        <div class="sneaker-info">
+          <h3>Nike Dunk</h3>
+          <p>$110</p>
+          <a href="nike-dunk.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/adidas-superstar.png" alt="Adidas Superstar">
+        <div class="sneaker-info">
+          <h3>Adidas Superstar</h3>
+          <p>$130</p>
+          <a href="adidas-superstar.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/converse-chuck.png" alt="Converse Chuck Taylor">
+        <div class="sneaker-info">
+          <h3>Converse Chuck Taylor</h3>
+          <p>$80</p>
+          <a href="converse-chuck.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/vans-old-skool.png" alt="Vans Old Skool">
+        <div class="sneaker-info">
+          <h3>Vans Old Skool</h3>
+          <p>$70</p>
+          <a href="vans-old-skool.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/asics-gel.png" alt="Asics Gel-Lyte">
+        <div class="sneaker-info">
+          <h3>Asics Gel-Lyte</h3>
+          <p>$140</p>
+          <a href="asics-gel.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+      <div class="sneaker-card">
+        <img src="pictures/under-armour.png" alt="Under Armour HOVR">
+        <div class="sneaker-info">
+          <h3>Under Armour HOVR</h3>
+          <p>$160</p>
+          <a href="under-armour.html" class="view-product-button">View Product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>CONTACT US</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Sneaker Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html

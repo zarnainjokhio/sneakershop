@@ -1,0 +1,509 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #050505;
+  color: #fff;
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #00ffff;
+  }
+  25% {
+    text-shadow: -2px 2px 0px #ff0000, 2px -2px 0px #00ffff;
+  }
+  50% {
+    text-shadow: 2px -2px 0px #ff0000, -2px 2px 0px #00ffff;
+  }
+  75% {
+    text-shadow: -2px -2px 0px #ff0000, 2px 2px 0px #00ffff;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #00ffff;
+  }
+}
+@keyframes glitchLogo {
+  0% {
+    text-shadow: 3px 3px 0px #ff0000, -3px -3px 0px #00ffff;
+  }
+  25% {
+    text-shadow: -3px 3px 0px #ff0000, 3px -3px 0px #00ffff;
+  }
+  50% {
+    text-shadow: 3px -3px 0px #ff0000, -3px 3px 0px #00ffff;
+  }
+  75% {
+    text-shadow: -3px -3px 0px #ff0000, 3px 3px 0px #00ffff;
+  }
+  100% {
+    text-shadow: 3px 3px 0px #ff0000, -3px -3px 0px #00ffff;
+  }
+}
+
+.logo {
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  animation: glitchLogo 0.6s infinite alternate;
+}
+
+/* Apply this to your headers */
+.glitch-header {
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: white;
+  position: relative;
+  animation: glitch 0.5s infinite alternate;
+
+}
+@keyframes glitchEffect {
+  0% {
+    text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #00ffff;
+  }
+  50% {
+    text-shadow: -2px 2px 0px #ff0000, 2px -2px 0px #00ffff;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #ff0000, -2px -2px 0px #00ffff;
+  }
+}
+
+.top-heading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.top-heading:hover {
+  animation: glitchEffect 0.8s infinite alternate;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6f61;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon .cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff6f61;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+}
+
+.cta-button {
+  background: grey;
+  color:black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: darkblue;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #000000;
+}
+
+.filter-bar select {
+  padding: 10px;
+  border: 3px solid #101010;
+  border-radius: 5px;
+  background:gray;
+  color: #080808;
+}
+
+.featured-sneakers, .recommended-sneakers, .latest-sneakers, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sneaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* From Uiverse.io by 212004ALJI */
+.view-product-button, .view-product-button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+.view-product-button, 
+.view-product-button a {
+  text-decoration: none !important;
+ 
+
+}
+
+
+
+.view-product-button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+.view-product-button:hover {
+  text-shadow: -1px -1px 0px #E94BE8, 1px 1px 0px #1df2f0;
+  border: 1px solid rgb(255, 20, 147);
+  box-shadow: 0px 10px 10px -10px rgb(255, 20, 147);
+  color: #ff1493;
+}
+
+.view-product-button:hover::after {
+  text-shadow: -3px -3px 0px #E94BE8, 3px 3px 0px #1df2f0;
+  border: 3px solid rgb(255, 20, 147);
+  animation: glitch_4011 1s steps(2, end);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+.sneaker-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(235, 231, 231, 0.902);
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.0); /* 40% transparent */
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size */
+  gap: 10px; /* Adds space between images */
+  align-items: center; /* Centers images vertically */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+img {
+  aspect-ratio: 3 / 2; /* Adjust the ratio as needed */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sneaker-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.sneaker-card:hover img {
+  transform: scale(1.1);
+}
+
+.sneaker-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.sneaker-card:hover .sneaker-info {
+  transform: translateY(0);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+}
+
+.contact button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #ff6f61;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  color: #333;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cart-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.checkout-button {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.checkout-button:hover {
+  background: #e65a50;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

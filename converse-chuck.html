@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converse Chuck</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 900px;
+            height: 600px;
+            background: #fff;
+            margin: 20px;
+        }
+
+        .imgBx {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            background: #212121;
+            transition: .3s linear;
+        }
+
+        .imgBx img {
+            width: 600px;
+            transform: rotate(-30deg);
+            left: -50px;
+            position: relative;
+            transition: .9s linear;
+            z-index: 1;
+        }
+
+        .imgBx::before {
+            content: "Converse Chuck";
+            position: absolute;
+            font-size: 150px;
+            color: rgba(255, 255, 255, 0.15);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            font-weight: bold;
+            letter-spacing: -10px;
+            opacity: 0.4;
+        }
+
+        .details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .details h2 {
+            font-size: 2.4em;
+            color: #444;
+        }
+
+        .details h3 {
+            font-size: 2.5em;
+            color: #a2a2a2;
+        }
+
+        .details p {
+            font-size: 15px;
+            color: #333;
+        }
+
+        .size-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .size-options span {
+            padding: 8px 12px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .size-options span:hover,
+        .size-options span.active {
+            background: #000;
+            color: #fff;
+        }
+
+        button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 40px;
+            margin-top: 20px;
+        }
+
+        footer {
+            position: fixed;
+            right: 16px;
+            bottom: 12px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgBx">
+            <img src="pictures/converse-chuck.png" alt="Converse Chuck">
+        </div>
+        <div class="details">
+            <div>
+                <h2>Converse Chuck <br><span>Classic Street Icon</span></h2>
+                <p>
+                    The Converse Chuck Taylor is a legendary sneaker, known for its timeless design and versatile appeal, making it perfect for any occasion.
+                </p>
+                <h3>Rs. 5,999</h3>
+                <div class="size-options">
+                    <span class="size">7</span>
+                    <span class="size">8</span>
+                    <span class="size">9</span>
+                    <span class="size">10</span>
+                    <span class="size">11</span>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">Contact Us</a>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.size').click(function () {
+                $('.size').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
